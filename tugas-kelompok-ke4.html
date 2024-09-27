@@ -1,11 +1,31 @@
 <html>
     <body>
         <script>
-            let nontonfilm = 5;
-            let ratingfilm = 4;
+            let film = 5;
+            let rating = 4;
+            //let menonton = true;
             
-            let filmyangsudahditonton = nontonfilm > 9;
-            let filmyangdirating = ratingfilm > 9;
+            let hasilFilm = film >= 5;
+            let hasilRating = rating >= 4;
+
+            let menontonFilm = hasilFilm && hasilRating;
+
+            document.writeln("Total Film = " + film);
+            document.writeln("<br>");
+            //document.writeln("Menonton?" + menontonFilm);
+            document.writeln("Rating = " + rating)
+            //document.writeln("<br>");
+            //document.writeln("Menonton?" + menontonFilm);
+            document.writeln("<br>");
+            document.writeln("Maka : ");
+
+            if(menontonFilm)
+        {
+            document.writeln("Pengguna Aktif Menonton");
+        } else {
+            document.writeln("Pengguna Tidak Aktif Menonton");
+        }
+            
         </script>
     </body>
 </html>
